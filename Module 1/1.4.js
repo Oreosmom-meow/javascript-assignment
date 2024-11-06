@@ -1,3 +1,4 @@
+'user strict';
 function    printSchool()
 {
     let message;

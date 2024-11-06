@@ -1,3 +1,4 @@
+'user strict';
 function printAllYear(start, end)
 {
     let array_year = [];

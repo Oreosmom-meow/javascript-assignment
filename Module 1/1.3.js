@@ -1,3 +1,4 @@
+'user strict';
 let number1 = parseInt(prompt('Type number 1.'));
 let number2 = parseInt(prompt('Type number 2.'));
 let number3 = parseInt(prompt('Type number 3.'));

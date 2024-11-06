@@ -1,3 +1,4 @@
+'user strict';
 function    rollDiceandCalculate(number)
 {
     let result = 0;;

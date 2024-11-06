@@ -1,3 +1,4 @@
+'user strict';
 function printSquare(choice)
 {
     if (choice == 1)
