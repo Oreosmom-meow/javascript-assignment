@@ -13,6 +13,7 @@ function userInput()
         inputNumber = parseInt(prompt('Input a number'));
     }
     if (inputNumber == 0)
+        
     {
         numberArray.push(inputNumber);
         return (numberArray);
