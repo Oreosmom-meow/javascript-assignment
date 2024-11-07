@@ -1,22 +1,22 @@
 'use strict';
-function roll_dice()
+function roll_dice(number)
 {
-    let dice_number = Math.floor(Math.random() * 6) + 1;
+    let dice_number = Math.floor(Math.random() * number) + 1;
     const numberArray = []
     numberArray.push(dice_number);
     return (numberArray);
 }
 
-function numberArray()
+function numberArray(number)
 {
-    const first_array = roll_dice();
-    let dice_number = Math.floor(Math.random() * 6) + 1;
-    while (first_array.includes(6) == false)
+    const first_array = roll_dice(number);
+    let dice_number = Math.floor(Math.random() * number) + 1;
+    while (first_array.includes(number) == false)
     {
-        dice_number = Math.floor(Math.random() * 6) + 1;
+        dice_number = Math.floor(Math.random() * number) + 1;
         first_array.push(dice_number);
     }
-    if (first_array.includes(6) == true)
+    if (first_array.includes(number) == true)
     {
         return (first_array);
     }
@@ -36,11 +36,8 @@ function createNumberist(array)
 
 function start()
 {
-    let choice = confirm('Do you want to print out dice number list until it is 6?');
-    if (choice == true)
-    {
-        createNumberist(numberArray(roll_dice()));
-    }
+    const choice = parseInt(prompt('Enter a number as the sides of dice.'))
+    createNumberist(numberArray(choice));
 }
 
 start();
